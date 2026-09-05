@@ -1,0 +1,22 @@
+# FFmpeg binaries (melebihi limit 100MB GitHub - install manual atau via LFS)
+vendor/ffmpeg/ffmpeg.exe
+vendor/ffmpeg/ffplay.exe
+vendor/ffmpeg/ffprobe.exe
+vendor/ffmpeg/*.exe
+
+# Temp & cache
+temp/
+*.tmp
+*.log
+
+# Env & secrets
+.env
+config.local.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer (opsional - uncomment jika tidak ingin push vendor)
+/vendor/
+# Jika tetap push vendor, pastikan ffmpeg di-ignore di atas

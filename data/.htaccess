@@ -1,0 +1,8 @@
+# Protect data — deny all except stats.json (public counter)
+Options -Indexes
+Require all denied
+<Files "stats.json">
+    Require all granted
+    Order Allow,Deny
+    Allow from all
+</Files>
